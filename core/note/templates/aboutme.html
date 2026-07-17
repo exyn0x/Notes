@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <h1>My skills:</h1>
+
+    <ol>
+        {% for skill in skills %}
+
+        <li>{{ skill }}</li>
+
+        {% empty %}
+
+        <p>No Skills(</p>
+
+        {% endfor %}
+    </ol>
+</html>
